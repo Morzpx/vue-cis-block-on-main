@@ -25,10 +25,10 @@
                 >
                 <a 
                     :href="'/cars/'+link+'/'+item.alias" 
-                    class="text-decoration-none c-yadarkgray c-h-yablack d-block b-radius-small bg-h-yayellow py-1 ps-3 shadow-small-h"
+                    class="text-decoration-none c-yadarkgray c-h-yablack d-block b-radius-small py-1 ps-3 d-flex align-items-center justify-content-between"
                     >
                     {{ item.name }}
-                    <span class="ms-4">{{ item.vehicles }}</span>
+                    <span class="p-1 b-radius-small bg-yalightgray c-yalightblack bg-h-yayellow text-center">{{ item.vehicles }}</span>
                 </a>
             </div>
         </div>
@@ -66,5 +66,15 @@ export default {
 	margin-left: 15px;
 	top: 0;
 	right: 0;
+}
+.cis-filter-on-main-brands-item:hover a {
+    font-weight: 500;
+}
+.cis-filter-on-main-brands-item span {
+    width: 50px;
+}
+.cis-filter-on-main-brands-item:hover span {
+    background-color: var(--yayellow);
+
 }
 </style>
