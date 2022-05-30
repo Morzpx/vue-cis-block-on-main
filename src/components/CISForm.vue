@@ -70,7 +70,7 @@
                             <div 
                                 class="bg-yawhite b-yagray b-radius-small position-relative"
                                 v-if="response">
-                                <div class="row px-3 pt-1 mb-2"> 
+                                <div class="row px-3 pt-1 mb-2">
                                     <div class="col-6 text-start">
                                         <div class="text-minus-minus c-yagray" style="line-height: 1;">От</div>
                                         {{ Format(rangeValue[0]) }} ₽
